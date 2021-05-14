@@ -59,6 +59,7 @@ struct ContentView: View {
                 }
                 Section(header: Text("Total Bill")){
                     Text("\(totalBill, specifier: "%.2f")")
+                        .foregroundColor(selectedTip == 0 ? .red : .green)
                 }
             }
             .navigationBarTitle("We Split", displayMode: .automatic)
